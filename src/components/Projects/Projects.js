@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import mentalhealth from "../../Assets/Projects/MentalHealth.png";
+import heart from "../../Assets/Projects/Heart.png";
+import sked from "../../Assets/Projects/sked-ai.png";
 
 function Projects() {
   return (
@@ -23,38 +20,39 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={mentalhealth}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Mental Health Analysis"
+              description="🧠 AI-Powered Mental Health Assistance Platform
+              A MERN stack web application team project designed to support students struggling with stress, anxiety, and mental health challenges. Features an assistive rule-based chatbot and an AI-powered Gemini chatbot for personalized guidance and stress reduction. Includes a mental health assessment, progress tracking with visual analytics, and personalized recommendations (videos, blogs, games)."
+              ghLink="https://github.com/shaik-sabeel/MentalHealth"
+              demoLink="https://mindcare-psi.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={sked}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Sked.AI"
+              description="SKED.AI is an intelligent scheduling assistant that helps users efficiently organize their tasks, meetings, and daily routines. It analyzes user preferences and availability to automatically suggest optimal time slots and resolve scheduling conflicts. The system provides smart reminders and notifications to ensure better time management. By simplifying scheduling and enhancing productivity, SKED.AI helps users maintain a well-balanced and organized workflow."
+              ghLink="https://github.com/shaik-sabeel/SKED.AI"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={heart}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Heart Attack Prediction"
+              description="Heart Disease Prediction Model is a machine learning-based system that predicts whether a person is at high or low risk of heart disease based on their health parameters. It analyzes inputs such as age, cholesterol level, blood pressure, and other medical factors to generate accurate predictions. The model helps in early detection and prevention by providing quick and reliable risk assessments. This project aims to support better healthcare decisions and promote awareness of heart health."
+              ghLink="https://github.com/shaik-sabeel/Heart-Attack-Prediction"
+              demoLink="https://shaik-sabeel-heart-disease-prediction-app-hkceir.streamlit.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -84,9 +82,9 @@ function Projects() {
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
